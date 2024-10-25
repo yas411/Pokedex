@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 const pokemonController = require('../controllers/pokemonController');
 
-console.log('pokemonController:', pokemonController); // Para verificar a exportação
-console.log('getAllPokemons:', pokemonController.getAllPokemons); // Deve ser uma função
-console.log('getPokemon:', pokemonController.getPokemon); // Deve ser uma função
+console.log('pokemonController:', pokemonController);
+console.log('getAllPokemons:', pokemonController.getAllPokemons);
+console.log('getPokemon:', pokemonController.getPokemon);
 
-router.get('/', pokemonController.getAllPokemons); // Esta linha pode causar o erro se undefined
-router.get('/pokemon/:id', pokemonController.getPokemon); // O mesmo vale para esta linha
+router.get('/', pokemonController.getAllPokemons); 
+router.get('/pokemon/:id', pokemonController.getPokemon);
 
 module.exports = router;
 
