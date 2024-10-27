@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Treinadores</title>
+</head>
+<body>
+    <h1>Treinadores</h1>
+    <ul>
+        <% treinadores.forEach(function(treinador) { %>
+            <li>
+                <a href="/treinador/<%= treinador.id %>"><%= treinador.nome %></a>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/treinadores/cadastrarNovoTreinador">Adicionar Treinador</a>
+    <br>
+    <a href="/">Voltar à Pokédex</a>
+</body>
+</html>

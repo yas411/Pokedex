@@ -19,8 +19,8 @@ const getAdicionarPokemons = (req, res) => {
 }
 
 const createPokemons = (req, res) => {
-    pokemonModel.createPokemon(req.body.nome, req.body.tipo); // Apenas chama a função para criar
-    res.redirect('/'); // Redireciona para a lista de Pokémon
+    pokemonModel.createPokemon(req.body.nome, req.body.tipo);
+    res.redirect('/');
 }
 
 module.exports = {
