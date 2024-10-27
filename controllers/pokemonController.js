@@ -14,8 +14,19 @@ const getPokemon = (req, res) => {
     }
 };
 
+const getAdicionarPokemons = (req, res) => {
+    res.render('adicionarPokemon');
+}
+
+const createPokemons = (req, res) => {
+    pokemonModel.createPokemon(req.body.nome, req.body.tipo); // Apenas chama a função para criar
+    res.redirect('/'); // Redireciona para a lista de Pokémon
+}
+
 module.exports = {
     getAllPokemons,
-    getPokemon
+    getPokemon,
+    getAdicionarPokemons,
+    createPokemons
 };
 
