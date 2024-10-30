@@ -15,7 +15,7 @@ const getTreinador = (req, res) => {
 };
 
 const getAdicionarTreinadores = (req, res) => {
-    res.render('adicionarTreinador');
+    res.render('cadastrarNovoTreinador');
 }
 
 const createTreinadores = (req, res) => {
@@ -24,8 +24,8 @@ const createTreinadores = (req, res) => {
 }
 
 module.exports = {
-    getTreinador, 
     getAllTreinadores,
+    getTreinador, 
     getAdicionarTreinadores,
     createTreinadores
 };
