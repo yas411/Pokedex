@@ -1,9 +1,9 @@
 const treinadores = [
-    { id: 1, nome: 'Eu'}
+ 
 ];
 
 const getTreinadores = () => treinadores;
-const getTreinadorById = (id) => treinadores.find(p => p.id === parseInt(id));
+const getTreinadorById = (id) => treinadores.find(t => t.id === parseInt(id));
 
 const getAdicionarTreinador = () => treinadores;
 

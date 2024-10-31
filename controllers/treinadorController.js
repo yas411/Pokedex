@@ -20,7 +20,7 @@ const getAdicionarTreinadores = (req, res) => {
 
 const createTreinadores = (req, res) => {
     treinadorModel.createTreinador(req.body.nome);
-    res.redirect('treinadores');
+    res.redirect('/treinadores');
 }
 
 module.exports = {
