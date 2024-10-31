@@ -10,7 +10,7 @@ const getAdicionarTreinador = () => treinadores;
 const createTreinador = (nome) => {
     const newTreinador = {
         id: treinadores.length + 1,
-        nome: nome,
+        nome: nome
     };
     treinadores.push(newTreinador);
 };

@@ -7,4 +7,4 @@ router.get('/:id', treinadorController.getTreinador);
 router.get('/cadastrarNovoTreinador', treinadorController.getAdicionarTreinadores);
 router.post('/cadastrarNovoTreinador', treinadorController.createTreinadores);
 
-
+module.exports = router;

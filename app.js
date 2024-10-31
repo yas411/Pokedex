@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const pokemonRoutes = require('./routes/pokemonRoutes'); 
-const treinadorRoutes = require('./routes/treinadorRoutes')
+const treinadorRoutes = require('./routes/treinadorRoutes');
 
 const app = express();
 app.set('view engine', 'ejs');
